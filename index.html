@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glass Heart | Custom Hair, Color & Styling</title>
+    <meta
+      name="description"
+      content="Glass Heart is a boutique hairstylist website with Square booking, Square checkout links, services, gallery, policies, and social media."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=UnifrakturMaguntia&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!--
+      REPLACE BRAND PLACEHOLDERS:
+      - Glass Heart
+      - Stylist Name
+      - City / Service Area
+      - Square booking widget code
+      - Square payment links
+      - Social media URLs
+      - Gallery images
+      - Service names, prices, and durations
+    -->
+
+    <header class="fixed left-0 top-0 z-50 w-full border-b border-white/15 bg-white/80 backdrop-blur-xl">
+      <nav class="section-shell flex h-20 items-center justify-between" aria-label="Primary navigation">
+        <a href="#top" class="group flex items-center gap-3" aria-label="Go to Glass Heart homepage">
+          <!-- Small brand mark / texture accent instead of full logo image -->
+
+            <span class="relative h-2.5 w-2.5 rounded-full bg-silverBrand shadow-[0_0_18px_rgba(255,255,255,0.9)]"></span>
+          </span>
+        
+          <!-- Text-based nav wordmark -->
+          <span class="flex flex-col leading-none">
+            <span
+              class="font-brand text-[1.9rem] leading-none tracking-wide text-transparent bg-clip-text bg-gradient-to-b from-white via-silverBrand to-gray-500 drop-shadow-[0_2px_2px_rgba(0,0,0,0.45)]"
+            >
+              Glass Heart
+            </span>
+            <span class="mt-1 text-[0.62rem] font-bold uppercase tracking-[0.28em] text-magentaBrand">
+              Boutique Hair Studio
+            </span>
+          </span>
+        </a>
+
+        <div class="hidden items-center gap-8 lg:flex">
+          <a href="#services" class="text-sm font-semibold uppercase tracking-[0.16em] hover:text-magentaBrand">Services</a>
+          <a href="#gallery" class="text-sm font-semibold uppercase tracking-[0.16em] hover:text-magentaBrand">Gallery</a>
+          <a href="#booking" class="text-sm font-semibold uppercase tracking-[0.16em] hover:text-magentaBrand">Booking</a>
+          <a href="#policies" class="text-sm font-semibold uppercase tracking-[0.16em] hover:text-magentaBrand">Policies</a>
+          <a href="#contact" class="text-sm font-semibold uppercase tracking-[0.16em] hover:text-magentaBrand">Contact</a>
+        </div>
+
+        <div class="hidden items-center gap-3 lg:flex">
+          <!-- REPLACE href with real Square checkout/payment link -->
+          <a href="https://square.link/REPLACE-DEPOSIT-LINK" class="btn-secondary" target="_blank" rel="noopener">
+            Pay Deposit
+          </a>
+
+          <a href="#booking" class="btn-primary">
+            Book Service
+          </a>
+        </div>
+
+        <button
+          data-menu-button
+          class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-ink/10 bg-white lg:hidden"
+          aria-label="Open mobile menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span class="text-2xl leading-none">☰</span>
+        </button>
+      </nav>
+
+      <div id="mobile-menu" data-mobile-menu class="hidden border-t border-ink/10 bg-white p-4 lg:hidden">
+        <a data-close-mobile href="#services" class="mobile-link">Services</a>
+        <a data-close-mobile href="#gallery" class="mobile-link">Gallery</a>
+        <a data-close-mobile href="#booking" class="mobile-link">Booking</a>
+        <a data-close-mobile href="#policies" class="mobile-link">Policies</a>
+        <a data-close-mobile href="#contact" class="mobile-link">Contact</a>
+        <div class="mt-4 grid grid-cols-2 gap-3">
+          <a
+            href="https://square.link/REPLACE-DEPOSIT-LINK"
+            target="_blank"
+            rel="noopener"
+            class="btn-secondary px-4 text-center text-xs"
+          >
+            Pay Deposit
+          </a>
+          <a data-close-mobile href="#booking" class="btn-primary px-4 text-center text-xs">
+            Book Service
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- HERO -->
+      <section class="relative overflow-hidden bg-ink pt-28 text-white">
+        <div class="absolute inset-0 plaid-overlay opacity-70"></div>
+        <div class="absolute inset-0 bg-gradient-to-br from-black via-black/70 to-black/30"></div>
+
+        <div class="section-shell relative grid min-h-[88vh] items-center gap-12 py-16 lg:grid-cols-[1.1fr_0.9fr] lg:py-24">
+          <div>
+            <div class="logo-frame mb-6 max-w-[320px]">
+              <img src="/glass-heart-logo.png" alt="Glass Heart logo" class="logo-img" />
+            </div>
+
+            <p class="mb-5 inline-flex rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.28em] text-yellowBrand backdrop-blur">
+              Custom Hair • Color • Styling
+            </p>
+
+            <h1 class="max-w-4xl font-display text-5xl italic leading-[0.95] tracking-tight sm:text-6xl lg:text-8xl">
+              Hair that feels personal, polished, and unforgettable.
+            </h1>
+
+            <p class="mt-7 max-w-2xl text-lg leading-8 text-white/80 sm:text-xl">
+              A boutique beauty experience for custom color, protective styling, extensions,
+              silk press appointments, and special occasion hair.
+            </p>
+
+            <div class="mt-9 flex flex-col gap-4 sm:flex-row">
+              <a href="#booking" class="btn-primary bg-white text-ink hover:bg-yellowBrand hover:text-ink">
+                Choose a Service
+              </a>
+              <a href="#services" class="btn-secondary border-white/30 bg-white/10 text-white hover:border-white hover:text-white">
+                View Services
+              </a>
+            </div>
+
+            <div class="mt-10 grid max-w-xl grid-cols-3 gap-3 text-center">
+              <div class="rounded-3xl border border-white/15 bg-white/10 p-4 backdrop-blur">
+                <p class="font-display text-3xl italic">1:1</p>
+                <p class="mt-1 text-xs uppercase tracking-[0.18em] text-white/60">Custom Looks</p>
+              </div>
+              <div class="rounded-3xl border border-white/15 bg-white/10 p-4 backdrop-blur">
+                <p class="font-display text-3xl italic">Pro</p>
+                <p class="mt-1 text-xs uppercase tracking-[0.18em] text-white/60">Service</p>
+              </div>
+              <div class="rounded-3xl border border-white/15 bg-white/10 p-4 backdrop-blur">
+                <p class="font-display text-3xl italic">Care</p>
+                <p class="mt-1 text-xs uppercase tracking-[0.18em] text-white/60">Healthy Hair</p>
+              </div>
+            </div>
+          </div>
+
+          <aside class="glass-card rounded-[2.5rem] p-5 text-ink">
+            <div class="rounded-[2rem] bg-mist p-5">
+              <div class="logo-frame-light mb-5 flex h-72 items-center justify-center rounded-[1.5rem] p-6"><img src="/glass-heart-logo.png" alt="Glass Heart brand logo" class="max-h-full w-full object-contain" /></div>
+              <p class="text-xs font-bold uppercase tracking-[0.26em] text-magentaBrand">
+                Featured Experience
+              </p>
+              <h2 class="mt-3 font-display text-4xl italic">Book your next signature look.</h2>
+              <p class="mt-4 text-sm leading-6 text-ink/70">
+                Choose your service, review appointment notes, and reserve your spot through Square.
+              </p>
+              <a href="#booking" class="btn-primary mt-6 w-full">Choose Service First</a>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- QUICK BOOKING / SQUARE -->
+      <section id="booking" class="relative overflow-hidden py-20">
+        <div class="section-shell">
+          <div class="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
+            <div class="rounded-[2.5rem] bg-ink p-8 text-white shadow-soft lg:p-10">
+              <p class="text-xs font-bold uppercase tracking-[0.3em] text-yellowBrand">
+                Book + Checkout
+              </p>
+              <h2 class="mt-4 font-display text-4xl italic sm:text-5xl">
+                Reserve your appointment through Square.
+              </h2>
+              <p class="mt-5 leading-7 text-white/75">
+                The recommended flow is service first, then date and time. Clients should pick the exact service they want before choosing an appointment slot, because duration, pricing, required deposit, and availability may change by service.
+              </p>
+
+              <div class="mt-8 grid gap-3 rounded-[2rem] border border-white/10 bg-white/10 p-4 text-sm leading-6 text-white/75">
+                <p><span class="font-bold text-white">1. Select service</span> inside Square or from a service-card link.</p>
+                <p><span class="font-bold text-white">2. Pick date and time</span> based on real Square availability.</p>
+                <p><span class="font-bold text-white">3. Pay deposit/checkout</span> only after the service is clear.</p>
+              </div>
+
+              <div class="mt-6 grid gap-3 sm:grid-cols-2">
+                <!-- REPLACE with real Square Payment Link -->
+                <a
+                  href="https://square.link/REPLACE-DEPOSIT-LINK"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn-primary bg-magentaBrand hover:bg-white hover:text-ink"
+                >
+                  Pay Deposit
+                </a>
+
+                <!-- REPLACE with real Square Payment Link -->
+                <a
+                  href="https://square.link/REPLACE-CHECKOUT-LINK"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn-secondary border-white/20 bg-white/10 text-white hover:bg-white hover:text-ink"
+                >
+                  Checkout
+                </a>
+              </div>
+
+              <p class="mt-5 text-xs leading-6 text-white/50">
+                Replace these links with real Square Payment Links from Square Dashboard.
+              </p>
+            </div>
+
+            <div class="rounded-[2.5rem] border border-ink/10 bg-white p-6 shadow-soft lg:p-8">
+              <div class="mb-5 flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
+                <div>
+                  <p class="text-xs font-bold uppercase tracking-[0.28em] text-tealBrand">
+                    Square Booking Widget
+                  </p>
+                  <h3 class="mt-2 font-display text-3xl italic">Select service, then time</h3>
+                </div>
+                <a href="#services" class="text-sm font-bold uppercase tracking-[0.18em] text-magentaBrand">
+                  View service menu
+                </a>
+              </div>
+
+              <div class="min-h-[460px] rounded-[2rem] border-2 border-dashed border-ink/15 bg-smoke/60 p-6">
+                <!--
+                  SQUARE BOOKING WIDGET PLACEHOLDER
+
+                  In Square Dashboard:
+                  1. Go to Appointments or Payments > Appointments.
+                  2. Open Online Booking > Channels.
+                  3. Choose "Add your booking flow to an existing site."
+                  4. Copy the official Square embed code.
+                  5. Paste the Square-provided HTML/script below.
+
+                  Do not invent the script URL.
+                  Use the exact code generated by the stylist's Square account.
+                -->
+
+                <div class="flex h-full min-h-[400px] flex-col items-center justify-center text-center">
+                  <div class="logo-frame-light mb-5 w-32"><img src="/glass-heart-logo.png" alt="Glass Heart logo" class="logo-img" /></div>
+                  <p class="max-w-md text-sm font-semibold uppercase tracking-[0.18em] text-ink/50">
+                    Paste Square service-first booking embed code here
+                  </p>
+                  <p class="mt-4 max-w-lg text-sm leading-6 text-ink/60">
+                    Until the real Square widget is added, this area acts as the visual placeholder
+                    for the embedded appointment flow: service selection first, then date and time.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES -->
+      <section id="services" class="bg-white py-20">
+        <div class="section-shell">
+          <div class="max-w-3xl">
+            <p class="text-xs font-bold uppercase tracking-[0.3em] text-magentaBrand">Services</p>
+            <h2 class="mt-4 font-display text-4xl italic sm:text-6xl">Signature hair services.</h2>
+            <p class="mt-5 text-lg leading-8 text-ink/65">
+              Replace the placeholder services, prices, durations, and booking URLs with the stylist’s real service menu. Each service-card button can link to that service’s Square booking link when available.
+            </p>
+          </div>
+
+          <div class="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+            <article class="group overflow-hidden rounded-[2rem] border border-ink/10 bg-mist shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-soft">
+              <div class="h-3 bg-[url('/plaid-brand.jpg')] bg-cover bg-center"></div>
+              <div class="p-7">
+                <h3 class="font-display text-3xl italic">Silk Press</h3>
+                <p class="mt-3 text-sm leading-6 text-ink/65">Smooth, polished finish with movement, shine, and healthy-hair care.</p>
+                <div class="mt-6 flex items-center justify-between border-t border-ink/10 pt-5">
+                  <span class="text-sm font-bold">Starting at $___</span>
+                  <span class="text-sm text-ink/50">__ min</span>
+                </div>
+                <!-- Optional: replace #booking with the Square direct booking link for this specific service. -->
+                <a href="#booking" class="btn-primary mt-6 w-full">Select This Service</a>
+              </div>
+            </article>
+
+            <article class="group overflow-hidden rounded-[2rem] border border-ink/10 bg-mist shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-soft">
+              <div class="h-3 bg-tealBrand"></div>
+              <div class="p-7">
+                <h3 class="font-display text-3xl italic">Color Consultation</h3>
+                <p class="mt-3 text-sm leading-6 text-ink/65">Personalized color planning, hair history review, and realistic goal setting.</p>
+                <div class="mt-6 flex items-center justify-between border-t border-ink/10 pt-5">
+                  <span class="text-sm font-bold">Starting at $___</span>
+                  <span class="text-sm text-ink/50">__ min</span>
+                </div>
+                <!-- Optional: replace #booking with the Square direct booking link for this specific service. -->
+                <a href="#booking" class="btn-primary mt-6 w-full">Select This Service</a>
+              </div>
+            </article>
+
+            <article class="group overflow-hidden rounded-[2rem] border border-ink/10 bg-mist shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-soft">
+              <div class="h-3 bg-magentaBrand"></div>
+              <div class="p-7">
+                <h3 class="font-display text-3xl italic">Custom Color</h3>
+                <p class="mt-3 text-sm leading-6 text-ink/65">Dimensional color, bold transformations, glossing, and custom tone work.</p>
+                <div class="mt-6 flex items-center justify-between border-t border-ink/10 pt-5">
+                  <span class="text-sm font-bold">Starting at $___</span>
+                  <span class="text-sm text-ink/50">__ min</span>
+                </div>
+                <!-- Optional: replace #booking with the Square direct booking link for this specific service. -->
+                <a href="#booking" class="btn-primary mt-6 w-full">Select This Service</a>
+              </div>
+            </article>
+
+            <article class="group overflow-hidden rounded-[2rem] border border-ink/10 bg-mist shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-soft">
+              <div class="h-3 bg-yellowBrand"></div>
+              <div class="p-7">
+                <h3 class="font-display text-3xl italic">Braids / Protective Style</h3>
+                <p class="mt-3 text-sm leading-6 text-ink/65">Protective styling with clean parts, polished finish, and appointment prep guidance.</p>
+                <div class="mt-6 flex items-center justify-between border-t border-ink/10 pt-5">
+                  <span class="text-sm font-bold">Starting at $___</span>
+                  <span class="text-sm text-ink/50">__ min</span>
+                </div>
+                <!-- Optional: replace #booking with the Square direct booking link for this specific service. -->
+                <a href="#booking" class="btn-primary mt-6 w-full">Select This Service</a>
+              </div>
+            </article>
+
+            <article class="group overflow-hidden rounded-[2rem] border border-ink/10 bg-mist shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-soft">
+              <div class="h-3 bg-charcoal"></div>
+              <div class="p-7">
+                <h3 class="font-display text-3xl italic">Extensions</h3>
+                <p class="mt-3 text-sm leading-6 text-ink/65">Length, volume, and blended styling customized to the client’s desired look.</p>
+                <div class="mt-6 flex items-center justify-between border-t border-ink/10 pt-5">
+                  <span class="text-sm font-bold">Starting at $___</span>
+                  <span class="text-sm text-ink/50">__ min</span>
+                </div>
+                <!-- Optional: replace #booking with the Square direct booking link for this specific service. -->
+                <a href="#booking" class="btn-primary mt-6 w-full">Select This Service</a>
+              </div>
+            </article>
+
+            <article class="group overflow-hidden rounded-[2rem] border border-ink/10 bg-mist shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-soft">
+              <div class="h-3 bg-[url('/plaid-brand.jpg')] bg-cover bg-center"></div>
+              <div class="p-7">
+                <h3 class="font-display text-3xl italic">Bridal / Event Styling</h3>
+                <p class="mt-3 text-sm leading-6 text-ink/65">Elevated styling for weddings, photoshoots, special events, and formal occasions.</p>
+                <div class="mt-6 flex items-center justify-between border-t border-ink/10 pt-5">
+                  <span class="text-sm font-bold">Starting at $___</span>
+                  <span class="text-sm text-ink/50">__ min</span>
+                </div>
+                <!-- Optional: replace #booking with the Square direct booking link for this specific service. -->
+                <a href="#booking" class="btn-primary mt-6 w-full">Select This Service</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- GALLERY -->
+      <section id="gallery" class="py-20">
+        <div class="section-shell">
+          <div class="flex flex-col justify-between gap-6 lg:flex-row lg:items-end">
+            <div class="max-w-3xl">
+              <p class="text-xs font-bold uppercase tracking-[0.3em] text-tealBrand">Portfolio</p>
+              <h2 class="mt-4 font-display text-4xl italic sm:text-6xl">Looks clients remember.</h2>
+              <p class="mt-5 text-lg leading-8 text-ink/65">Replace these placeholder blocks with real client photos. Use optimized images in the public folder.</p>
+            </div>
+            <a href="https://instagram.com/REPLACE-HANDLE" target="_blank" rel="noopener" class="btn-secondary">View Instagram</a>
+          </div>
+
+          <div class="mt-12 grid auto-rows-[18rem] gap-5 md:grid-cols-3">
+            <div class="gallery-tile md:row-span-2" aria-label="Gallery placeholder one"></div>
+            <div class="gallery-tile" aria-label="Gallery placeholder two"></div>
+            <div class="gallery-tile md:row-span-2" aria-label="Gallery placeholder three"></div>
+            <div class="gallery-tile" aria-label="Gallery placeholder four"></div>
+            <div class="gallery-tile md:col-span-2" aria-label="Gallery placeholder five"></div>
+            <div class="gallery-tile" aria-label="Gallery placeholder six"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="bg-ink py-20 text-white">
+        <div class="section-shell grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
+          <div class="rounded-[2.5rem] plaid-soft p-6 shadow-glow">
+            <div class="rounded-[2rem] bg-white/85 p-8 text-ink backdrop-blur">
+              <p class="text-xs font-bold uppercase tracking-[0.3em] text-magentaBrand">About the Stylist</p>
+              <h2 class="mt-4 font-display text-4xl italic">Meet the artist behind Glass Heart.</h2>
+              <p class="mt-5 leading-7 text-ink/70">Replace this with a personalized stylist bio. Mention experience, specialty services, hair-care philosophy, and what makes the appointment experience unique.</p>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="font-display text-4xl italic sm:text-6xl">Healthy hair, confident clients, custom results.</h3>
+            <div class="mt-8 grid gap-4 sm:grid-cols-2">
+              <div class="rounded-3xl border border-white/10 bg-white/10 p-6">
+                <h4 class="font-bold uppercase tracking-[0.18em] text-yellowBrand">Healthy Hair</h4>
+                <p class="mt-3 text-sm leading-6 text-white/70">Services are built around care, preparation, and long-term hair goals.</p>
+              </div>
+              <div class="rounded-3xl border border-white/10 bg-white/10 p-6">
+                <h4 class="font-bold uppercase tracking-[0.18em] text-yellowBrand">Custom Looks</h4>
+                <p class="mt-3 text-sm leading-6 text-white/70">Each appointment is personalized to the client’s style, lifestyle, and maintenance needs.</p>
+              </div>
+              <div class="rounded-3xl border border-white/10 bg-white/10 p-6">
+                <h4 class="font-bold uppercase tracking-[0.18em] text-yellowBrand">Education</h4>
+                <p class="mt-3 text-sm leading-6 text-white/70">Clients leave with practical maintenance guidance and product recommendations.</p>
+              </div>
+              <div class="rounded-3xl border border-white/10 bg-white/10 p-6">
+                <h4 class="font-bold uppercase tracking-[0.18em] text-yellowBrand">Professional Service</h4>
+                <p class="mt-3 text-sm leading-6 text-white/70">Clear booking, policies, prep instructions, and communication from start to finish.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- POLICIES -->
+      <section id="policies" class="bg-white py-20">
+        <div class="section-shell">
+          <div class="max-w-3xl">
+            <p class="text-xs font-bold uppercase tracking-[0.3em] text-magentaBrand">Policies</p>
+            <h2 class="mt-4 font-display text-4xl italic sm:text-6xl">Before you book.</h2>
+            <p class="mt-5 text-lg leading-8 text-ink/65">Customize these policies to match the stylist’s actual business rules.</p>
+          </div>
+
+          <div class="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+            <div class="rounded-[2rem] border border-ink/10 bg-mist p-7"><h3 class="font-display text-2xl italic">Deposits</h3><p class="mt-3 text-sm leading-6 text-ink/65">A deposit may be required to secure your appointment. Deposits are applied toward your final balance.</p></div>
+            <div class="rounded-[2rem] border border-ink/10 bg-mist p-7"><h3 class="font-display text-2xl italic">Late Arrivals</h3><p class="mt-3 text-sm leading-6 text-ink/65">Please arrive on time. Late arrivals may require service adjustments or rescheduling.</p></div>
+            <div class="rounded-[2rem] border border-ink/10 bg-mist p-7"><h3 class="font-display text-2xl italic">Cancellations</h3><p class="mt-3 text-sm leading-6 text-ink/65">Cancellations should be made within the required notice window listed in the booking policy.</p></div>
+            <div class="rounded-[2rem] border border-ink/10 bg-mist p-7"><h3 class="font-display text-2xl italic">No-Shows</h3><p class="mt-3 text-sm leading-6 text-ink/65">No-shows may lose their deposit and may be required to prepay for future appointments.</p></div>
+            <div class="rounded-[2rem] border border-ink/10 bg-mist p-7"><h3 class="font-display text-2xl italic">Rescheduling</h3><p class="mt-3 text-sm leading-6 text-ink/65">Reschedule through the official booking link or contact the stylist within the approved window.</p></div>
+            <div class="rounded-[2rem] border border-ink/10 bg-mist p-7"><h3 class="font-display text-2xl italic">Appointment Prep</h3><p class="mt-3 text-sm leading-6 text-ink/65">Follow the prep instructions listed for your service. Some styles may require clean, detangled, or product-free hair.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT / SOCIAL -->
+      <section id="contact" class="plaid-soft py-20">
+        <div class="section-shell">
+          <div class="rounded-[2.5rem] bg-white/85 p-8 shadow-soft backdrop-blur lg:p-12">
+            <div class="grid gap-10 lg:grid-cols-[1fr_0.9fr] lg:items-center">
+              <div>
+                <p class="text-xs font-bold uppercase tracking-[0.3em] text-tealBrand">Contact + Social</p>
+                <h2 class="mt-4 font-display text-4xl italic sm:text-6xl">Stay connected.</h2>
+                <p class="mt-5 text-lg leading-8 text-ink/65">Follow the stylist for recent work, openings, announcements, and hair-care education.</p>
+              </div>
+
+              <div class="grid gap-3 sm:grid-cols-2">
+                <a href="https://instagram.com/REPLACE-HANDLE" target="_blank" rel="noopener" class="btn-secondary">Instagram</a>
+                <a href="https://tiktok.com/@REPLACE-HANDLE" target="_blank" rel="noopener" class="btn-secondary">TikTok</a>
+                <a href="https://facebook.com/REPLACE-PAGE" target="_blank" rel="noopener" class="btn-secondary">Facebook</a>
+                <a href="mailto:hello@example.com" class="btn-secondary">Email</a>
+                <a href="#booking" class="btn-primary sm:col-span-2">Book Service</a>
+              </div>
+            </div>
+
+            <div class="mt-10 rounded-[2rem] border border-ink/10 bg-mist p-6">
+              <p class="text-sm leading-6 text-ink/65">Location / service area placeholder: Add salon suite address, city, travel details, parking notes, or “exact address provided after booking” if applicable.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-ink py-10 text-white">
+      <div class="section-shell flex flex-col justify-between gap-6 md:flex-row md:items-center">
+        <div>
+          <div class="logo-frame inline-flex max-w-[240px]"><img src="/glass-heart-logo.png" alt="Glass Heart logo" class="logo-img" /></div>
+          <p class="mt-2 text-xs uppercase tracking-[0.22em] text-white/45">Custom hair, color, styling, and client care</p>
+        </div>
+
+        <div class="flex flex-wrap gap-3">
+          <a href="#booking" class="btn-primary bg-white text-ink hover:bg-yellowBrand">Book Service</a>
+          <a href="https://instagram.com/REPLACE-HANDLE" target="_blank" rel="noopener" class="btn-secondary border-white/20 bg-white/10 text-white hover:bg-white hover:text-ink">Instagram</a>
+        </div>
+
+        <p class="text-xs text-white/45">© <span id="year">2026</span> Glass Heart. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
