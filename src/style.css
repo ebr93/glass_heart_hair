@@ -34,7 +34,7 @@ body {
 
 .plaid-overlay {
   background-image:
-    linear-gradient(rgba(8, 8, 8, 0.5), rgba(8, 8, 8, 0.68)),
+
     url("/plaid-brand.jpg");
   background-size: cover;
   background-position: center;
@@ -75,4 +75,22 @@ body {
 
 .logo-img {
   @apply h-auto w-full object-contain;
+}
+
+@keyframes ping-slow-wait {
+  0%, 28% {
+    transform: scale(1);
+    opacity: 0.75;
+  }
+  30% {
+    transform: scale(2);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+.animate-ping-wait {
+  animation: ping-slow-wait 5s ease-in-out infinite;
 }
